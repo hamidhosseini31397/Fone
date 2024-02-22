@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.1 on win32)" generated="20240220 11:34:37.524" rpa="false" schemaversion="4">
+<suite id="s1" name="labSelenium" source="C:\Users\hamhos\Desktop\Lab\TrailrunnerJenkins\Selenium\labSelenium.robot">
+<test id="s1-t1" name="rent_car" line="43">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240220 11:34:37.634" level="INFO">Opening browser 'chrome' to base url 'https://rental2.infotiv.net/'.</msg>
+<msg timestamp="20240220 11:34:38.393" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\hamhos\Desktop\Webdriver\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<status status="PASS" starttime="20240220 11:34:37.634" endtime="20240220 11:35:09.769"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240220 11:35:09.769" endtime="20240220 11:35:09.886"/>
+</kw>
+<kw name="LoginUser">
+<arg>${email1}</arg>
+<arg>${password1}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='email']</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240220 11:35:09.888" level="INFO">Typing text 'alanjkk@infotiv.se' into text field '//input[@id='email']'.</msg>
+<status status="PASS" starttime="20240220 11:35:09.887" endtime="20240220 11:35:10.048"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>//input[@id='password']</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20240220 11:35:10.049" level="INFO">Typing password into text field '//input[@id='password']'.</msg>
+<msg timestamp="20240220 11:35:10.094" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20240220 11:35:10.175" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20240220 11:35:10.048" endtime="20240220 11:35:10.175"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[@id='login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240220 11:35:10.176" level="INFO">Clicking button '//button[@id='login']'.</msg>
+<status status="PASS" starttime="20240220 11:35:10.175" endtime="20240220 11:35:10.420"/>
+</kw>
+<status status="PASS" starttime="20240220 11:35:09.886" endtime="20240220 11:35:10.420"/>
+</kw>
+<kw name="SelectDate">
+<arg>${startDate1}</arg>
+<arg>${endDate1}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='start']</arg>
+<arg>${startDate}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240220 11:35:10.421" level="INFO">Typing text '2024-02-12' into text field '//input[@id='start']'.</msg>
+<status status="PASS" starttime="20240220 11:35:10.420" endtime="20240220 11:35:10.531"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='end']</arg>
+<arg>${endDate}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240220 11:35:10.531" level="INFO">Typing text '2024-02-15' into text field '//input[@id='end']'.</msg>
+<status status="PASS" starttime="20240220 11:35:10.531" endtime="20240220 11:35:10.632"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id='continue']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240220 11:35:10.632" level="INFO">Clicking element '//button[@id='continue']'.</msg>
+<status status="PASS" starttime="20240220 11:35:10.632" endtime="20240220 11:35:10.687"/>
+</kw>
+<status status="PASS" starttime="20240220 11:35:10.420" endtime="20240220 11:35:10.687"/>
+</kw>
+<kw name="SelectCar">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//tbody/tr[1]/td[5]/form[1]/input[4]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240220 11:35:10.688" level="INFO">Clicking button '//tbody/tr[1]/td[5]/form[1]/input[4]'.</msg>
+<msg timestamp="20240220 11:35:10.924" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240220 11:35:10.924" level="FAIL">Button with locator '//tbody/tr[1]/td[5]/form[1]/input[4]' not found.</msg>
+<status status="FAIL" starttime="20240220 11:35:10.688" endtime="20240220 11:35:10.927"/>
+</kw>
+<status status="FAIL" starttime="20240220 11:35:10.687" endtime="20240220 11:35:10.927"/>
+</kw>
+<kw name="EnterCardDetails">
+<arg>${card1}</arg>
+<arg>${fullName1}</arg>
+<arg>${monthCard1}</arg>
+<arg>${yearCard1}</arg>
+<arg>${cvcCard1}</arg>
+<status status="NOT RUN" starttime="20240220 11:35:10.928" endtime="20240220 11:35:10.928"/>
+</kw>
+<kw name="ValidateBooking">
+<arg>${startDate1}</arg>
+<arg>${endDate1}</arg>
+<status status="NOT RUN" starttime="20240220 11:35:10.928" endtime="20240220 11:35:10.928"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20240220 11:35:10.928" endtime="20240220 11:35:10.928"/>
+</kw>
+<status status="FAIL" starttime="20240220 11:34:37.633" endtime="20240220 11:35:10.928">Button with locator '//tbody/tr[1]/td[5]/form[1]/input[4]' not found.</status>
+</test>
+<test id="s1-t2" name="negativDateTest1" line="54">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240220 11:35:10.929" level="INFO">Opening browser 'chrome' to base url 'https://rental2.infotiv.net/'.</msg>
+<msg timestamp="20240220 11:35:11.478" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\hamhos\Desktop\Webdriver\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<status status="PASS" starttime="20240220 11:35:10.929" endtime="20240220 11:35:42.968"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240220 11:35:42.968" endtime="20240220 11:35:43.094"/>
+</kw>
+<kw name="LoginUser">
+<arg>${email1}</arg>
+<arg>${password1}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='email']</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240220 11:35:43.096" level="INFO">Typing text 'alanjkk@infotiv.se' into text field '//input[@id='email']'.</msg>
+<status status="PASS" starttime="20240220 11:35:43.095" endtime="20240220 11:35:43.286"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>//input[@id='password']</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20240220 11:35:43.287" level="INFO">Typing password into text field '//input[@id='password']'.</msg>
+<msg timestamp="20240220 11:35:43.339" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20240220 11:35:43.407" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20240220 11:35:43.286" endtime="20240220 11:35:43.407"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[@id='login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240220 11:35:43.408" level="INFO">Clicking button '//button[@id='login']'.</msg>
+<status status="PASS" starttime="20240220 11:35:43.407" endtime="20240220 11:35:43.806"/>
+</kw>
+<status status="PASS" starttime="20240220 11:35:43.095" endtime="20240220 11:35:43.806"/>
+</kw>
+<kw name="SelectDate">
+<arg>${invalidStartDate1}</arg>
+<arg>${invalidEndDate1}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='start']</arg>
+<arg>${startDate}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240220 11:35:43.806" level="INFO">Typing text '2025-02-10' into text field '//input[@id='start']'.</msg>
+<status status="PASS" starttime="20240220 11:35:43.806" endtime="20240220 11:35:43.920"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='end']</arg>
+<arg>${endDate}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240220 11:35:43.920" level="INFO">Typing text '2025-02-15' into text field '//input[@id='end']'.</msg>
+<status status="PASS" starttime="20240220 11:35:43.920" endtime="20240220 11:35:44.004"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id='continue']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240220 11:35:44.005" level="INFO">Clicking element '//button[@id='continue']'.</msg>
+<status status="PASS" starttime="20240220 11:35:44.004" endtime="20240220 11:35:44.076"/>
+</kw>
+<status status="PASS" starttime="20240220 11:35:43.806" endtime="20240220 11:35:44.076"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>//button[@id='continue']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240220 11:35:44.098" level="INFO">Element '//button[@id='continue']' is displayed.</msg>
+<status status="PASS" starttime="20240220 11:35:44.076" endtime="20240220 11:35:44.099"/>
+</kw>
+<status status="PASS" starttime="20240220 11:35:10.928" endtime="20240220 11:35:44.099"/>
+</test>
+<test id="s1-t3" name="negativDateTest2" line="61">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240220 11:35:44.101" level="INFO">Opening browser 'chrome' to base url 'https://rental2.infotiv.net/'.</msg>
+<msg timestamp="20240220 11:35:44.633" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\hamhos\Desktop\Webdriver\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<status status="PASS" starttime="20240220 11:35:44.101" endtime="20240220 11:36:16.051"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240220 11:36:16.051" endtime="20240220 11:36:16.173"/>
+</kw>
+<kw name="LoginUser">
+<arg>${email1}</arg>
+<arg>${password1}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='email']</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240220 11:36:16.175" level="INFO">Typing text 'alanjkk@infotiv.se' into text field '//input[@id='email']'.</msg>
+<status status="PASS" starttime="20240220 11:36:16.174" endtime="20240220 11:36:16.353"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>//input[@id='password']</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20240220 11:36:16.354" level="INFO">Typing password into text field '//input[@id='password']'.</msg>
+<msg timestamp="20240220 11:36:16.404" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20240220 11:36:16.456" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20240220 11:36:16.353" endtime="20240220 11:36:16.456"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[@id='login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240220 11:36:16.457" level="INFO">Clicking button '//button[@id='login']'.</msg>
+<status status="PASS" starttime="20240220 11:36:16.456" endtime="20240220 11:36:16.683"/>
+</kw>
+<status status="PASS" starttime="20240220 11:36:16.174" endtime="20240220 11:36:16.683"/>
+</kw>
+<kw name="SelectDate">
+<arg>${invalidStartDate2}</arg>
+<arg>${invalidEndDate2}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='start']</arg>
+<arg>${startDate}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240220 11:36:16.685" level="INFO">Typing text '2024-02-07' into text field '//input[@id='start']'.</msg>
+<status status="PASS" starttime="20240220 11:36:16.684" endtime="20240220 11:36:16.819"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='end']</arg>
+<arg>${endDate}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240220 11:36:16.819" level="INFO">Typing text '2024-02-08' into text field '//input[@id='end']'.</msg>
+<status status="PASS" starttime="20240220 11:36:16.819" endtime="20240220 11:36:16.925"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id='continue']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240220 11:36:16.926" level="INFO">Clicking element '//button[@id='continue']'.</msg>
+<status status="PASS" starttime="20240220 11:36:16.925" endtime="20240220 11:36:16.991"/>
+</kw>
+<status status="PASS" starttime="20240220 11:36:16.683" endtime="20240220 11:36:16.991"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>//button[@id='continue']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240220 11:36:17.042" level="INFO">Element '//button[@id='continue']' is displayed.</msg>
+<status status="PASS" starttime="20240220 11:36:16.991" endtime="20240220 11:36:17.043"/>
+</kw>
+<status status="PASS" starttime="20240220 11:35:44.100" endtime="20240220 11:36:17.043"/>
+</test>
+<test id="s1-t4" name="negativDateTest3" line="69">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240220 11:36:17.044" level="INFO">Opening browser 'chrome' to base url 'https://rental2.infotiv.net/'.</msg>
+<msg timestamp="20240220 11:36:17.748" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\hamhos\Desktop\Webdriver\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<status status="PASS" starttime="20240220 11:36:17.044" endtime="20240220 11:36:49.321"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240220 11:36:49.321" endtime="20240220 11:36:49.444"/>
+</kw>
+<kw name="LoginUser">
+<arg>${email1}</arg>
+<arg>${password1}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='email']</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240220 11:36:49.445" level="INFO">Typing text 'alanjkk@infotiv.se' into text field '//input[@id='email']'.</msg>
+<status status="PASS" starttime="20240220 11:36:49.445" endtime="20240220 11:36:49.571"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>//input[@id='password']</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20240220 11:36:49.572" level="INFO">Typing password into text field '//input[@id='password']'.</msg>
+<msg timestamp="20240220 11:36:49.614" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20240220 11:36:49.678" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20240220 11:36:49.571" endtime="20240220 11:36:49.678"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[@id='login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240220 11:36:49.679" level="INFO">Clicking button '//button[@id='login']'.</msg>
+<status status="PASS" starttime="20240220 11:36:49.678" endtime="20240220 11:36:50.210"/>
+</kw>
+<status status="PASS" starttime="20240220 11:36:49.444" endtime="20240220 11:36:50.210"/>
+</kw>
+<kw name="SelectDate">
+<arg>${startDate1}</arg>
+<arg>${invalidEndDate3}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='start']</arg>
+<arg>${startDate}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240220 11:36:50.211" level="INFO">Typing text '2024-02-12' into text field '//input[@id='start']'.</msg>
+<status status="PASS" starttime="20240220 11:36:50.211" endtime="20240220 11:36:50.307"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='end']</arg>
+<arg>${endDate}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240220 11:36:50.308" level="INFO">Typing text '2026-05-12' into text field '//input[@id='end']'.</msg>
+<status status="PASS" starttime="20240220 11:36:50.307" endtime="20240220 11:36:50.431"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id='continue']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240220 11:36:50.432" level="INFO">Clicking element '//button[@id='continue']'.</msg>
+<status status="PASS" starttime="20240220 11:36:50.431" endtime="20240220 11:36:50.498"/>
+</kw>
+<status status="PASS" starttime="20240220 11:36:50.210" endtime="20240220 11:36:50.498"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>//button[@id='continue']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240220 11:36:50.530" level="INFO">Element '//button[@id='continue']' is displayed.</msg>
+<status status="PASS" starttime="20240220 11:36:50.498" endtime="20240220 11:36:50.530"/>
+</kw>
+<status status="PASS" starttime="20240220 11:36:17.043" endtime="20240220 11:36:50.530"/>
+</test>
+<test id="s1-t5" name="WrongPasswordTest" line="77">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240220 11:36:50.532" level="INFO">Opening browser 'chrome' to base url 'https://rental2.infotiv.net/'.</msg>
+<msg timestamp="20240220 11:36:51.193" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\hamhos\Desktop\Webdriver\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<status status="PASS" starttime="20240220 11:36:50.531" endtime="20240220 11:37:22.682"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240220 11:37:22.682" endtime="20240220 11:37:22.814"/>
+</kw>
+<kw name="LoginUser">
+<arg>${email1}</arg>
+<arg>${wrongPassword1}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='email']</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240220 11:37:22.817" level="INFO">Typing text 'alanjkk@infotiv.se' into text field '//input[@id='email']'.</msg>
+<status status="PASS" starttime="20240220 11:37:22.814" endtime="20240220 11:37:22.933"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>//input[@id='password']</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20240220 11:37:22.934" level="INFO">Typing password into text field '//input[@id='password']'.</msg>
+<msg timestamp="20240220 11:37:22.975" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20240220 11:37:23.030" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20240220 11:37:22.933" endtime="20240220 11:37:23.030"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[@id='login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240220 11:37:23.031" level="INFO">Clicking button '//button[@id='login']'.</msg>
+<status status="PASS" starttime="20240220 11:37:23.030" endtime="20240220 11:37:23.246"/>
+</kw>
+<status status="PASS" starttime="20240220 11:37:22.814" endtime="20240220 11:37:23.246"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>//label[@id='signInError']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240220 11:37:23.285" level="INFO">Element '//label[@id='signInError']' is displayed.</msg>
+<status status="PASS" starttime="20240220 11:37:23.247" endtime="20240220 11:37:23.285"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>//button[@id='login']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240220 11:37:23.306" level="INFO">Element '//button[@id='login']' is displayed.</msg>
+<status status="PASS" starttime="20240220 11:37:23.285" endtime="20240220 11:37:23.306"/>
+</kw>
+<status status="PASS" starttime="20240220 11:36:50.531" endtime="20240220 11:37:23.306"/>
+</test>
+<status status="FAIL" starttime="20240220 11:34:37.525" endtime="20240220 11:37:23.307"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="1" skip="0" id="s1" name="labSelenium">labSelenium</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240220 11:34:38.393" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\hamhos\Desktop\Webdriver\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20240220 11:35:11.478" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\hamhos\Desktop\Webdriver\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20240220 11:35:44.633" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\hamhos\Desktop\Webdriver\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20240220 11:36:17.748" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\hamhos\Desktop\Webdriver\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20240220 11:36:51.193" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\hamhos\Desktop\Webdriver\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>

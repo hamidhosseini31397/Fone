@@ -1,0 +1,19 @@
+- User kan ställa in längd och vikt. // Konstruerade ett test med tillhörande kod, 100% täckning. GG
+- User BMI enligt formel vikt^2/längd // skrev test, skrev kod, den blev kort och koncis
+- Löprunda distans i km // Test började med en konstruktor, osäker på variabeltyp, skrev kod för att verifiera, testet passade men gjorde inte det vi ville, frågade david, gick ett varv. bestämde oss och ändrade kod. test 100%.
+- Löprunda tid (timmar,minuter,sekunder) se ovan
+- Löprunda datum(default, dagens datum) se ovan
+- Löprunda har ID // Implementerade UUID i varje run, jämförde att de inte va samma med toString()
+    - ID ska vara unikt // Använder UUID, kommer alltid vara unikt
+- Löprunda beräknar : 
+    - medelhastighet Distans(km) / Tid(timmar) // Skrev ett test för en metod som räknar ut avgSpeed för en run. skrev sedan ett test för en metod som lägger till flera runs i en collection och beräknar avg speed på dessa innan den delar resultatet på antalet runs och får ut avgSpeed för alla runs hos en user.
+    - Kilometer-tid Tid(minuter) / Distans(km) // skrev test med Davids hjälp, skrev metoden med Davids hjälp. testet passar.
+    
+- total distans av sparade löprundor // skrev ett test som använder en metod som summerar och returnerar distance av alla runs hos en user. skrev tomma metoder. testet kompilerar. skrev koden och testet passar.
+- medeldistansen för sparade rundor // skrev ett test som använder sig av en metod som summerar och returnerar medeldistansen av alla runs en user har. skapade metoden, testet kompilerar, skrev metoden och använde total distance metoden och testet passar.
+- id ska visa information om löprunda // skrev ett test som skapar en run och lägger till den till en user. assertar sedan att informationen metoden getInfo() returnerar de förväntade värdena av runnen.
+- radera löprunda med hjälp av id // skrev ett test som lägger till tre runs till en user och sen använder en metod som tar bort en specifik run baserat på sitt id och assertar att den inte längre finns med bland användarens runs. skrev en tom metod. testet kompilerar. skrev metoden som tar bort en specifik löprunda baserat på id. testet passar.
+
+Skrev om så att programmet använder en mockad databas. ordningen var inte optimal men removeRun() skrevs med testet först och metoden sen. test för databasapi skrevs och passar. 
+
+
